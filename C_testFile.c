@@ -14,3 +14,9 @@ int divide(double x, double y){
 int multiply(double x, double y){
     return x/y;
 }
+
+char* hello()
+{
+    char* str = malloc(sizeof("hello"));
+    return str;
+}
