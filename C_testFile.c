@@ -18,5 +18,6 @@ int multiply(double x, double y){
 char* hello()
 {
     char* str = malloc(sizeof("hello"));
+    str = "hello";
     return str;
 }
