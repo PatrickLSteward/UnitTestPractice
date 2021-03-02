@@ -18,7 +18,7 @@ void test_subtract(){
 void test_divide(){
     double tIn1[] = {10,20,22,44,55,63};
     double tIn2[] = {2,5,2,4,5,3};
-    int size = sizeof(tIn1) / sizeof(tIn1[0])
+    int size = sizeof(tIn1) / sizeof(tIn1[0]);
     double ans[size];
     
    for(int i = 0; i < size; ++ i){
