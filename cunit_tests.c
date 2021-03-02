@@ -20,7 +20,7 @@ void test_divide(){
     double tIn2[] = {2,5,2,4,5,3};
     double ans[] = {5,4,11,11,11,21};
   
-    for(int i = 0; i < sizeOftIn1(ans); ++ i){
+    for(int i = 0; i < sizeof(ans); ++ i){
         CU_ASSERT(divide(tIn1[i],tIn2[i]) == ans[i]);
     }
   
