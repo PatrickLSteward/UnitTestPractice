@@ -5,7 +5,7 @@
 
 void test_add(){
     CU_ASSERT(add(1,2) == 3);
-    CU_ASSERT(add(1,22) == 33);
+    CU_ASSERT(add(1,22) == 23);
     CU_ASSERT(add(-1,22) == 21);
 }
 
