@@ -10,9 +10,9 @@ void test_add(){
 }
 
 void test_subtract(){
-    CU_ASSERT(subtract(1,2) == 1);
-    CU_ASSERT(subtract(1,22) == 21);
-    CU_ASSERT(subtract(-1,22) == 23);
+    CU_ASSERT(subtract(2,1) == 1);
+    CU_ASSERT(subtract(22,1) == 21);
+    CU_ASSERT(subtract(-1,22) == -23);
 }
 
 int main(){
