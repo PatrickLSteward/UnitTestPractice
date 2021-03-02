@@ -1,7 +1,7 @@
   
 #include <CUnit/CUnit.h>
 #include <CUnit/Basic.h>
-#include "hello_functions.h"
+#include "C_header.h"
 
 void test_add(){
     CU_ASSERT(add(1,2) == 3);
