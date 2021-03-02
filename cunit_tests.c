@@ -18,9 +18,14 @@ void test_subtract(){
 void test_divide(){
     double tIn1[] = {10,20,22,44,55,63};
     double tIn2[] = {2,5,2,4,5,3};
-    double ans[] = {5,4,11,11,11,21};
+    int size = sizeof(tIn1) / sizeof(tIn1[0])
+    double ans[size];
+    
+   for(int i = 0; i < size; ++ i){
+        ans[i] = tIn1[i]/ tIn2[i];
+   }
   
-    for(int i = 0; i < sizeof(ans); ++ i){
+    for(int i = 0; i < size; ++ i){
         CU_ASSERT(divide(tIn1[i],tIn2[i]) == ans[i]);
     }
   
