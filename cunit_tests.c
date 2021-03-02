@@ -27,7 +27,7 @@ int main(){
     CU_add_test(suite2, "test_add", test_subtract);
 
     //set output mode, run tests, clean up 
-    CU_basid_set_mode(CU_BRM_VERBOSE);
+    CU_basic_set_mode(CU_BRM_VERBOSE);
 
     CU_basic_run_test();
 
