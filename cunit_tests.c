@@ -15,16 +15,29 @@ void test_subtract(){
     CU_ASSERT(subtract(-1,22) == -23);
 }
 
+void test_divde(){
+    double tIn1[] = {10,20,22,44,55,63};
+    double tIn2[] = {2,5,2,4,5,3};
+    double ans[] = {5,4,11,11,11,21};
+  
+    for(int i = 0; i < sizeOftIn1(ans); ++ i){
+        CU_ASSERT(divide(tIn1[i],tIn2[i]) == ans[i]);
+    }
+  
+}
+
 int main(){
     CU_initialize_registry();
 
     //declare suites 
     CU_pSuite suite1 = CU_add_suite("test_add", 0,0);
     CU_pSuite suite2 = CU_add_suite("test_subtract", 0,0);
+    CU_pSuite suite3 = CU_add_suite("test_divide", 0,0); 
 
     //add tests 
     CU_add_test(suite1, "test_add", test_add);
-    CU_add_test(suite2, "test_add", test_subtract);
+    CU_add_test(suite2, "test_subtract", test_subtract);
+    CU_add_test(suite3, "test_divide", test_divide);
 
     //set output mode, run tests, clean up 
     CU_basic_set_mode(CU_BRM_VERBOSE);
