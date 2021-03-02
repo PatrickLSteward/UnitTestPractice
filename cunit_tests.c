@@ -17,8 +17,8 @@ void test_subtract(){
 }
 
 void test_helloFunction(){
-  CU_ASSERT_STRING_EQUAL(*hello(),"hello");
-  CU_FAIL(*hello());
+  CU_ASSERT_STRING_EQUAL(hello(),"hello");
+  CU_FAIL(hello());
 }
 
 void test_divide(){
