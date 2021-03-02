@@ -13,12 +13,12 @@ void test_subtract(){
     CU_ASSERT(subtract(2,1) == 1);
     CU_ASSERT(subtract(22,1) == 21);
     CU_ASSERT(subtract(-1,22) == -23);
-    CU_FAIL("THE TEST_SUBTRACT FUNCTION FAILED");
+    
 }
 
 void test_helloFunction(){
   CU_ASSERT_STRING_EQUAL(*hello(),"hello");
-  
+  CU_FAIL(*hello());
 }
 
 void test_divide(){
