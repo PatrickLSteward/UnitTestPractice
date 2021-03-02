@@ -15,7 +15,7 @@ void test_subtract(){
     CU_ASSERT(subtract(-1,22) == -23);
 }
 
-void test_divde(){
+void test_divide(){
     double tIn1[] = {10,20,22,44,55,63};
     double tIn2[] = {2,5,2,4,5,3};
     double ans[] = {5,4,11,11,11,21};
