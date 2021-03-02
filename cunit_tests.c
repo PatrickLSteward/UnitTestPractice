@@ -16,7 +16,7 @@ void test_subtract(){
 }
 
 int main(){
-    CU_intiatialize_registry();
+    CU_initialize_registry();
 
     //declare suites 
     CU_pSuite suite1 = CU_add_suite("test_add", 0,0);
