@@ -42,7 +42,7 @@ script:
   - ./output
   - size output
   
-  - echo "Reached Script Section - "Patrick Steward CUnit"
+  - echo "Reached Script Section - Patrick Steward CUnit"
   - gcc        C_testFile.c cunit_tests.c -o cunit_democode -lcunit
   - ./cunit_democode
   - size cunit_democode
