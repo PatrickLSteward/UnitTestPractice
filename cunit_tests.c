@@ -16,7 +16,7 @@ void test_subtract(){
     
 }
 
-float test_temp(int reading){
+void float test_temp(){
     CU_ASSERT(temp(100) == 90.0);
     CU_ASSERT(temp(10) == 9.0);
 }
