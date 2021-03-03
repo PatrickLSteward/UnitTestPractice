@@ -16,7 +16,8 @@ void test_subtract(){
     
 }
 
-void float test_temp(){
+void test_temp(){
+    float tolerance = .1;
     CU_ASSERT(temp(100) == 90.0);
     CU_ASSERT(temp(10) == 9.0);
 }
