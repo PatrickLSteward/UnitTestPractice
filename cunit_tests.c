@@ -16,6 +16,11 @@ void test_subtract(){
     
 }
 
+float test_temp(int reading){
+    CU_ASSERT(temp(100) == 90.0);
+    CU_ASSERT(temp(10) == 9.0);
+}
+
 void test_helloFunction(){
   CU_ASSERT_STRING_EQUAL(hello(),"hello");
 }
@@ -44,12 +49,14 @@ int main(){
     CU_pSuite suite2 = CU_add_suite("test_subtract", 0,0);
     CU_pSuite suite3 = CU_add_suite("test_divide", 0,0); 
     CU_pSuite suite4 = CU_add_suite("test_helloFunction", 0,0);
+    CU_pSuite suite5 = CU_add_suite("test_temp", 0,0);
 
     //add tests 
     CU_add_test(suite1, "test_add", test_add);
     CU_add_test(suite2, "test_subtract", test_subtract);
     CU_add_test(suite3, "test_divide", test_divide);
     CU_add_test(suite4, "test_helloFunction", test_helloFunction);
+    CU_add_test(suite5, "test_temp", test_temp);
 
     //set output mode, run tests, clean up 
     CU_basic_set_mode(CU_BRM_VERBOSE);
