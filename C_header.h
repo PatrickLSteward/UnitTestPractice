@@ -11,5 +11,6 @@ int subtract(double x, double y);
 int divide(double x, double y);
 int multiply(double x, double y);
 char* hello();
+float temp(int reading);
 
 #endif
