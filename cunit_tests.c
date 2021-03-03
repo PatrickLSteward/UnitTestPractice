@@ -19,7 +19,7 @@ void test_subtract(){
 void test_temp(){
     float tolerance = .1;
     CU_ASSERT(temp(100) >= (100.0 - 100.0*tolerance));
-    CU_ASSERT(temp(100) <= (100.0 + 90.0*tolerance));
+    CU_ASSERT(temp(100) <= (100.0 + 100.0*tolerance));
 }
 
 void test_helloFunction(){
